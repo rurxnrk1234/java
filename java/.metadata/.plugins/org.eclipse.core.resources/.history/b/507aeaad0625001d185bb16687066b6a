@@ -1,0 +1,92 @@
+package thebrains.pim.service;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.List;
+
+import thebrains.pim.controller.MemberController;
+import thebrains.pim.model.Member;
+
+public class MemberServiceImpl<T> implements MemberService<T> { 
+	// 데이터를 DB가져와서 가공하거나, 가공한 결과를 DB에 저장을 요청
+		//MemberRepository memberRepository = null; // DB 또는 File 입출력을 담당
+	private String memberdb = MemberController.MEMBER_DB;
+	public MemberServiceImpl() {
+		// memberRepository = new MemberRepositoryImpl<T>();
+		//memberdb = memberDB;
+	}
+
+	@Override
+	public T login(String email, String pw) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void logout() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public int postMember(T member) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public T getMember(T member) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<T> getMemberList() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int putMember(T member) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int deleteMember(T member) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void readFile() {
+		File file = new File(memberdb);
+		if(file.canRead()) {
+			try {
+				MemberFileReader<Member> mfr = new MemberFileReader<Member>(file);
+				for(Member m : mfr.readMember()) {
+					System.out.println(m.getMno());
+					System.out.println(m.getEmail());
+					System.out.println(m.getName());
+				}
+			}catch (FileNotFoundException e) {
+				e.printStackTrace();	
+			}
+		}
+	}
+
+	@Override
+	public void saveFile() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void applyUpdate() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+
+}

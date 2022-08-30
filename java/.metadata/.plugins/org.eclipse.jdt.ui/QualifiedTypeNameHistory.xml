@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="kr.brains.api.Week"/>
+    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
+    <fullyQualifiedTypeName name="thebrains.pim.view.TUIView"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="thebrains.pim.service.MemberService"/>
+    <fullyQualifiedTypeName name="thebrains.pim.controller.MemberController"/>
+    <fullyQualifiedTypeName name="thebrains.pim.repository.MemberRepositoryImpl"/>
+    <fullyQualifiedTypeName name="thebrains.pim.model.Member"/>
+    <fullyQualifiedTypeName name="iducs.java.pim.repository.MemberRepository"/>
+    <fullyQualifiedTypeName name="thebrains.pim.service.MemberServiceWriter.MemberFileWriter"/>
+</qualifiedTypeNameHistroy>

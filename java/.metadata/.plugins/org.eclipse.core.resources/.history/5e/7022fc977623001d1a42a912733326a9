@@ -1,0 +1,13 @@
+package kr.brains.interf;
+
+public class SmartPhoneExample {
+
+	public static void main(String[] args) {
+		SmartPhone sp = new SmartPhone();
+		sp.call("010-1234-5678");
+		sp.playMusic("번개맨송");
+		sp.sendMsg("010-1234-5678", "아!힘들다");
+
+	}
+
+}

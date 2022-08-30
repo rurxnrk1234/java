@@ -1,0 +1,27 @@
+package kr.brains.api;
+
+import java.text.SimpleDateFormat;
+import java.util.*;
+
+
+public class CarExample {
+	
+	public static void main(String[] args){
+		
+		Calendar rightNow = Calendar.getInstance();
+		Date date = new Date();
+		SimpleDateFormat sdf = new SimpleDateFormat("yy년 mm월 dd일 hh:mm");
+		System.out.println(sdf.format(date));
+		
+		
+		Class clazz1 = null;
+		try {
+			clazz = Class.forName("kr.brians.api.Car");
+		}catch (ClassNotFoundEX)
+		clazz = Class.forName("kr.brians.api.Car");
+		Class clazz1 = Class.forName("kr.brains.api.Car");
+		System.out.println(clazz1.getPackageName());
+		System.out.println(clazz.);
+	}
+
+}

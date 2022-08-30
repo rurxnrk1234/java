@@ -1,0 +1,11 @@
+package kr.brains06;
+
+public class PolygonExample {
+	// 매개변수에 배열을 사용하면 매변변수 개수를 가변적으로 사용할 수 있음
+	public static void main(String[] args) {
+		Triangle triangle = new Triangle(50, 80);
+		System.out.println("넓이는 : " + triangle.evaluate());
+		Square square = new Square(40, 80);
+		System.out.println("넓이는 : " + square.evaluate());
+	}
+}

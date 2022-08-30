@@ -1,0 +1,25 @@
+package kr.brains03;
+
+public class CarExample {
+
+	public static void main(String[] args) {
+		Car car = new Car(); // 객체 생
+		car.model = "가스차"; // 직접 인스턴스 변수 값 배정(assignment)
+		 // 30L : setter를 이용한 값 배정
+		// 검증된 값을 배정
+		// car.gas = 61;
+		System.out.println("현재Gas : " + car.getGas());
+		
+		car.run();
+		
+				
+		/*String str = "현대자동차";
+		System.out.println(str.charAt(4));
+		int i = 166;
+		// Integer : int 기본형을 효과적으로 조작하기 위해 정의한 클래스
+		// Wrapper Class : 기본자료형을 효과적으로 조작하기 위해 정의한 클래스
+		System.out.println(Integer.toBinaryString(i));
+		*/
+	}
+
+}

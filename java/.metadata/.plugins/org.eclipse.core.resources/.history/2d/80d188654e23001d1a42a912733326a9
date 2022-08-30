@@ -1,0 +1,16 @@
+package kr.brains06;
+
+public class Trapezoid extends Polygon {
+	private int upper;
+	
+	public Trapezoid(int height, int width, int upper) {
+		super(height, width);
+		this.upper = upper;
+	}
+	
+	public int evaluate() {
+		int
+		return 0;
+	}
+
+}

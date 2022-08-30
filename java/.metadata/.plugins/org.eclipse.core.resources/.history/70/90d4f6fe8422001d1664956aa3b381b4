@@ -1,0 +1,27 @@
+package kr.brains03;
+
+public class Car {
+	String model;
+	
+	private int gas;
+		
+	// Setter/Getter Method;
+	void setGas(int gas) { // 가스를 주입한 결과
+		this.gas = gas;
+	}
+	int getGas() {
+		return gas;
+	}
+	
+	boolean isLeftGas() {
+		boolean isLeft = true;
+		if(gas == 0) {
+			System.out.print("gas가 없습니다\n");
+			isLeft = false;
+		}
+		else
+		System.out.print("gas가 있습니다\n");
+		return isLeft;
+	}
+	
+}

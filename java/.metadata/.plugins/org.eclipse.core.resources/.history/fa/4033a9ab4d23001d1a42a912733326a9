@@ -1,0 +1,6 @@
+package kr.brains06;
+
+public class Trapezoid extends Polygon {
+	
+
+}

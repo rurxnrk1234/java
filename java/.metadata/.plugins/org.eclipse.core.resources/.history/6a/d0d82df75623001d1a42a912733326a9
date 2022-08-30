@@ -1,0 +1,13 @@
+package kr.brains06;
+
+public class Rectangle extends Polygon {
+	
+	public Rectangle(int height, int width) {
+		super(height, width);
+	}
+	public int evaluate() {
+		int area = getHeight() * getWidth() / 2;
+		return area;
+	}
+}
+

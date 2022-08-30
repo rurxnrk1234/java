@@ -1,0 +1,16 @@
+package kr.brains.project;
+
+public interface Book {
+
+	String getTitle(String title);
+	void setTitle();
+	
+	String getTitle(String genre);
+	void setGenre();
+	
+	String getTitle(String author);
+	void setAuthor();
+	
+
+
+}
